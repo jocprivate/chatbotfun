@@ -13,7 +13,7 @@ app.use(bodyParser.json())
 
 //
 Routes
-app.get('/',fucntion(req,res){
+app.get('/',function(req,res){
         res.send("Hi I am a chatbot")
         })
 
