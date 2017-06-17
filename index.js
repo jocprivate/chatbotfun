@@ -17,7 +17,7 @@ app.get('/',function(req,res){
         })
 
 //Facebook
-token ="EAAWAawPhAwwBAOrro8GZBxe8NW8EJ02NNmNiZCPH3MmBRFMsZAHPm1aQDiFNY1XrZCmkOsveWurtgkEJsAKePLd6CRxOAY4AykFnD9tf2fDLUTj7SS4M3DnJNHgymRHGZAe9gZA453itTavfL9xBePrkxZBGYe0IseIWznCZAn1YnxaXXC9bZBMRnR6il9uirs4sZD"
+let token ="EAAWAawPhAwwBAOrro8GZBxe8NW8EJ02NNmNiZCPH3MmBRFMsZAHPm1aQDiFNY1XrZCmkOsveWurtgkEJsAKePLd6CRxOAY4AykFnD9tf2fDLUTj7SS4M3DnJNHgymRHGZAe9gZA453itTavfL9xBePrkxZBGYe0IseIWznCZAn1YnxaXXC9bZBMRnR6il9uirs4sZD"
 app.get('/webhook/',function(req,res){
     if(req.query['hub.verify_token']=="richman"){
         res.send(req.query['hub.challenge'])
