@@ -32,7 +32,9 @@ let messaging_events = req.body.entry[0].messaging
         let sender = event.sender.id;
         if(event.message && event.message.text){
             let text = event.message.text;
-            sendText(sender, "Text echo: " + text.substring(0,100))
+            //sendText(sender, "Text echo: " + text.substring(0,100))
+            sendText(sender, "What it do?")
+            sendText(sender, "Hope all is well bro")
         }
     }
     res.sendStatus(200)
