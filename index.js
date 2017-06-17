@@ -19,7 +19,7 @@ app.get('/',function(req,res){
 
 //Facebook
 
-app.get('/webhook/',function(req,rest){
+app.get('/webhook/',function(req,res){
     if(req.query['hub.verify_token']==="richman"){
         res.send(req.query['hub.challenge'])
     }
