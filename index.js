@@ -38,7 +38,7 @@ let messaging_events = req.body.entry[0].messaging
     res.sendStatus(200)
 })
 
-function sendText(send, text){
+function sendText(sender, text){
     let messageData = {text: text}
     request({
         url: "https://graph.facebook.com/v2.6/me/messages",
